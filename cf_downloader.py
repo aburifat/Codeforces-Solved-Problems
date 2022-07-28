@@ -99,7 +99,8 @@ class Retriever:
 
     get_url = 'http://codeforces.com/{contest_type}/{contest_id}/submission/{submission_id}'
 
-    def __init__(self, cf_handle=None, cf_password=None, codeforces=None, get_regular=None, get_gym=None, split_gym=None, folders=None, verbose=True):
+    #def __init__(self, cf_handle=None, cf_password=None, codeforces=None, get_regular=None, get_gym=None, split_gym=None, folders=None, verbose=True):
+    def __init__(self, cf_handle='armaster', cf_password=None, codeforces=None, get_regular='y', get_gym='y', split_gym='y', folders='n', verbose=True):
         self.cf_handle = cf_handle
         self.cf_password = cf_password
         self.codeforces = codeforces
@@ -122,6 +123,7 @@ class Retriever:
         return inp == 'y'
     
     def start(self):
+        """
         if self.cf_handle is None:
             self.cf_handle = input('Enter your codeforces handle: ').lower()
         else:
@@ -136,6 +138,7 @@ class Retriever:
             self.split_gym = self.get_input('Separate regular and gym contests in different folders?: [y/n] ')
         if self.folders is None:
                 self.folders = self.get_input('Create folders separately for each contest? [y/n]: ')
+        """
         if self.verbose:
             print('Starting AC Submission Download...')
         self.gym_set = set()
