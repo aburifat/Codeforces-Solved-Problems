@@ -1,5 +1,6 @@
 name: Run scheduled action
 on:
+  workflow_dispatch:
   schedule:
     # You need to set your schedule here
     - cron: '0 * * * *'
