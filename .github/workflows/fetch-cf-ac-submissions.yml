@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   schedule:
     # You need to set your schedule here
-    - cron: '0 * * * *'
+    - cron: '0 0 * * *'
 
 jobs:
   pull_data:
