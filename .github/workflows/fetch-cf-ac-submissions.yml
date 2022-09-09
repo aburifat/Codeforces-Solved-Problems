@@ -1,4 +1,4 @@
-name: Run scheduled action
+name: Fetch CF AC Submissions
 on:
   workflow_dispatch:
   schedule:
