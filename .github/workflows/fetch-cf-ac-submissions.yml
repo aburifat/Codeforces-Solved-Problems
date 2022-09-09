@@ -30,7 +30,7 @@ jobs:
       # NOTE: This commits everything in the `data` directory. Make sure this matches your needs
       - name: Git commit
         run: |
-          git add data
+          git add .
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git commit -m "CF-AC-Submissions"
