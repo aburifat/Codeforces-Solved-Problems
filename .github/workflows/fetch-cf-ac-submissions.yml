@@ -33,8 +33,7 @@ jobs:
           git add data
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          THEDATE=`date`
-          git commit -m "CF-AC-Submissions $THEDATE"
+          git commit -m "CF-AC-Submissions"
 
       # NOTE: Check that your branch name is correct here
       - name: Git push
