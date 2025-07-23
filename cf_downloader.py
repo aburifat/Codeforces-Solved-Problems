@@ -100,7 +100,7 @@ class Retriever:
     get_url = 'http://codeforces.com/{contest_type}/{contest_id}/submission/{submission_id}'
 
     #def __init__(self, cf_handle=None, cf_password=None, codeforces=None, get_regular=None, get_gym=None, split_gym=None, folders=None, verbose=True):
-    def __init__(self, cf_handle='armaster', cf_password=None, codeforces=None, get_regular=1, get_gym=0, split_gym=1, folders=0, verbose=True):
+    def __init__(self, cf_handle='aburifat', cf_password=None, codeforces=None, get_regular=1, get_gym=0, split_gym=1, folders=0, verbose=True):
         self.cf_handle = cf_handle
         self.cf_password = cf_password
         self.codeforces = codeforces
